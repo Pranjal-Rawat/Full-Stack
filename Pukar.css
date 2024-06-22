@@ -106,7 +106,7 @@ p {
 /* CSS */
 .navbar.slide-up {
     transform: translateY(-100%);
-    transition: transform 1.5s ease-out;
+    transition: transform 1.5s ease-in;
 }
 
 
