@@ -12,7 +12,6 @@
             scroll-behavior: smooth;
         }
     </style>
-    <script src="Pukar.js"></script>
 </head>
 
 <body>
@@ -32,19 +31,25 @@
             <div class="line"></div>
         </div>
     </nav>
+
+    <div id="sideNav" class="side-nav">
+        <a href="javascript:void(0)" onclick="toggleNav()">Close</a>
+        <a href="#Home">Home</a>
+        <a href="#Blog">Blog</a>
+        <a href="#Aboutus">About us</a>
+        <a href="#Contact">Contact us</a>
+    </div>
+
     <section class="background firstSection" id="Home">
         <div class="boxmain">
             <div class="firsthalf">
                 <p class="textbig">Education is the only thing which no one can take away from you</p>
                 <p class="textsmall">
                     Need for NGOs
-
                     Since independence, India has achieved phenomenal economic growth in education, healthcare, poverty
                     alleviation and overall standard of living.
-
                     Issues of exclusion of women, children and marginalized communities in the development process
                     however remains.
-
                     Other adverse consequences of inequitable growth include the spread of Naxalism, recurrent violence
                     for reservations and ever increasing cases of farmer suicides. Despite significant investments by the
                     government in rural education, there remains a gap in addressing the complex educational challenges
@@ -68,10 +73,8 @@
             <h2 class="secTag textbig">Blog</h2>
             <p class="secsubTag textsmall">
                 Human rights education and awareness
-
                 The challenge for human rights education is to focus on questions of participation, accessibility and
                 inclusiveness. Forum Living, Learning, Acting for Human Rights, 2009
-
                 Many human rights NGOs also include, at least as part of their activities, some type of public awareness
                 or educational work. Realising that the essence of their support lies with the general public, NGOs will
                 often try to bring greater knowledge of human rights issues to members of the public. A greater
@@ -84,13 +87,10 @@
                 gap by leveraging their grassroots presence to effectively implement rural education programmes. With a
                 focus on community engagement, NGOs can deliver targeted solutions that address contextual needs of
                 education at the local level. The Service Role
-
                 The non-profit sector acts as a flexible mechanism through which people concerned about a social or
                 economic problem can begin to respond.
-
                 It also caters to groups of the population who desire a range of public goods that exceeds what the
                 government or society is willing to support.
-
                 NGOs help in constructive conflict resolution. In the international arena Track II diplomacy (involving
                 non-governmental bodies) plays a crucial role in creating an environment of trust and confidence.
             </p>
@@ -127,6 +127,7 @@
             <img src="Pukarbackground.jpg" alt="pukarlogo" class="imgFluid animated">
         </div>
     </section>
+
     <div class="dis">
         <h2>Disclaimer</h2>
         <p>No third party agency is working on behalf of Goonj<br>
@@ -139,8 +140,12 @@
             please bring it to our notice immediately on mail@goonj.org
         </p>
     </div>
+
     <div class="loc">
-        <img class="loc" src="location_icon.png" alt="locationImg"><p>Purkul Village Uttarii Gaon, road, near Bhagwantpur, Dehradun, Uttarakhand 248009</p></div>
+        <img class="loc" src="location_icon.png" alt="locationImg">
+        <p>Purkul Village Uttarii Gaon, road, near Bhagwantpur, Dehradun, Uttarakhand 248009</p>
+    </div>
+
     <section class="contact" id="Contact">
         <h2>Contact Us</h2>
         <form id="contactForm">
@@ -159,61 +164,48 @@
             <button class="btn1" type="submit">Send Message</button>
         </form>
     </section>
+
     <footer class="background">
         <p class="textfoot">
             Copyright &copy; 2024 www.purkul.com All Rights Reserved
         </p>
     </footer>
+
     <script>
+        // JavaScript for smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
         });
-    });
-});
 
-const burger = document.getElementById('burger');
-const navlist = document.getElementById('navlist');
+        // JavaScript for burger menu functionality
+        const burger = document.getElementById('burger');
+        const sideNav = document.getElementById('sideNav');
 
-burger.addEventListener('click', () => {
-    burger.classList.toggle('active');
-    navlist.classList.toggle('vclass');
-});
-
-
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            sideNav.classList.toggle('open');
         });
-    });
-});
 
-const burger = document.getElementById('burger');
-const navlist = document.getElementById('navlist');
-const navbar = document.querySelector('.navbar');
+        // JavaScript for navbar hide/show on scroll
+        const navbar = document.querySelector('.navbar');
+        let lastScrollTop = 0;
 
-burger.addEventListener('click', () => {
-    burger.classList.toggle('active');
-    navlist.classList.toggle('vclass');
-});
-
-let lastScrollTop = 0;
-window.addEventListener('scroll', function() {
-    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-    if (currentScroll > lastScrollTop) {
-        // Scrolling down
-        navbar.classList.add('slide-up');
-    } else {
-        // Scrolling up
-        navbar.classList.remove('slide-up');
-    }
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-});
+        window.addEventListener('scroll', function() {
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll > lastScrollTop) {
+                // Scrolling down
+                navbar.classList.add('slide-up');
+            } else {
+                // Scrolling up
+                navbar.classList.remove('slide-up');
+            }
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        });
     </script>
 </body>
 
