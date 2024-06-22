@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link data-default-icon="pukaarLOGOFINAL.jpg" rel="icon" sizes="192x192" href="pukaarLOGOFINAL.jpg">
+    <link data-default-icon="pukaarLOGOFINAL.jpg" rel="icon" sizes="192x192" href="pukaarLOGOFINAL.jpg"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Pukar.css">
     <title>Pukar</title>
@@ -13,7 +13,7 @@
         }
     </style>
 </head>
-<link rel="js" href="Pukar.js">
+
 <body>
     <nav class="navbar background">
         <div class="logo">
@@ -163,6 +163,40 @@
             Copyright &copy; 2024 www.purkul.com All Rights Reserved
         </p>
     </footer>
+    <script>
+        // JavaScript
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+const burger = document.getElementById('burger');
+const navlist = document.getElementById('navlist');
+const navbar = document.querySelector('.navbar');
+
+burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    navlist.classList.toggle('vclass');
+});
+
+let lastScrollTop = 0;
+window.addEventListener('scroll', function() {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    if (currentScroll > lastScrollTop) {
+        // Scrolling down
+        navbar.classList.add('slide-up');
+    } else {
+        // Scrolling up
+        navbar.classList.remove('slide-up');
+    }
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+});
+
+    </script>
 </body>
 
 </html>
