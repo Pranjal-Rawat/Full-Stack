@@ -33,7 +33,7 @@
     </nav>
 
     <div id="sideNav" class="side-nav">
-        <a href="javascript:void(0)" onclick="toggleNav()">Close</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
         <a href="#Home">Home</a>
         <a href="#Blog">Blog</a>
         <a href="#Aboutus">About us</a>
@@ -171,42 +171,7 @@
         </p>
     </footer>
 
-    <script>
-        // JavaScript for smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // JavaScript for burger menu functionality
-        const burger = document.getElementById('burger');
-        const navlist = document.getElementById('navlist');
-
-        burger.addEventListener('click', () => {
-            burger.classList.toggle('active');
-            navlist.classList.toggle('vclass');
-        });
-
-        // JavaScript for navbar hide/show on scroll
-        const navbar = document.querySelector('.navbar');
-        let lastScrollTop = 0;
-
-        window.addEventListener('scroll', function() {
-            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-            if (currentScroll > lastScrollTop) {
-                // Scrolling down
-                navbar.classList.add('slide-up');
-            } else {
-                // Scrolling up
-                navbar.classList.remove('slide-up');
-            }
-            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
