@@ -12,17 +12,9 @@ const sideNav = document.getElementById('sideNav');
 
 burger.addEventListener('click', () => {
     burger.classList.toggle('active');
-    if (sideNav.style.width === '250px') {
-        sideNav.style.width = '0';
-    } else {
-        sideNav.style.width = '250px';
-    }
+    sideNav.style.width = sideNav.style.width === '250px' ? '0' : '250px';
 });
 
 function toggleNav() {
-    if (sideNav.style.width === '250px') {
-        sideNav.style.width = '0';
-    } else {
-        sideNav.style.width = '250px';
-    }
+    sideNav.style.width = sideNav.style.width === '250px' ? '0' : '250px';
 }
