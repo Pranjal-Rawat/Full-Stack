@@ -61,7 +61,6 @@ p {
     color: white;
 }
 
-
 .navbar {
     height: 85px;
     display: flex;
@@ -103,12 +102,10 @@ p {
     display: flex;
 }
 
-/* CSS */
 .navbar.slide-up {
     transform: translateY(-100%);
     transition: transform 1.5s ease-in;
 }
-
 
 .navlist li a:hover {
     color: grey;
