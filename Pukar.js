@@ -8,9 +8,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 const burger = document.getElementById('burger');
-const navlist = document.getElementById('navlist');
+const sideNav = document.getElementById('sideNav');
 
 burger.addEventListener('click', () => {
     burger.classList.toggle('active');
-    navlist.classList.toggle('vclass');
+    if (sideNav.style.width === '250px') {
+        sideNav.style.width = '0';
+    } else {
+        sideNav.style.width = '250px';
+    }
 });
+
+function toggleNav() {
+    if (sideNav.style.width === '250px') {
+        sideNav.style.width = '0';
+    } else {
+        sideNav.style.width = '250px';
+    }
+}
