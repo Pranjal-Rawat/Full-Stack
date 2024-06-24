@@ -8,6 +8,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+
 // JavaScript for burger menu functionality
 const burger = document.getElementById('burger');
 const navlist = document.getElementById('navlist');
