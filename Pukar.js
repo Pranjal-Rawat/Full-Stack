@@ -8,18 +8,39 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-
 // JavaScript for burger menu functionality
 const burger = document.getElementById('burger');
 const navlist = document.getElementById('navlist');
 const sideNav = document.getElementById('sideNav');
+const closeBtn = document.getElementById('closeBtn');
+const sideNavLinks = document.querySelectorAll('.sideNavLink');
+const donateBtn = document.getElementById('donateBtn');
 
 burger.addEventListener('click', () => {
     burger.classList.toggle('active');
     sideNav.classList.toggle('open');
+    if (sideNav.classList.contains('open')) {
+        donateBtn.style.display = 'none';
+    } else {
+        donateBtn.style.display = 'block';
+    }
 });
 
-// JavaScript for navbar hide/show on scroll
+closeBtn.addEventListener('click', () => {
+    sideNav.classList.remove('open');
+    burger.classList.remove('active');
+    donateBtn.style.display = 'block';
+});
+
+sideNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        sideNav.classList.remove('open');
+        burger.classList.remove('active');
+        donateBtn.style.display = 'block';
+    });
+});
+
+// JavaScript for navbar and donate button hide/show on scroll
 const navbar = document.querySelector('.navbar');
 let lastScrollTop = 0;
 
@@ -28,9 +49,11 @@ window.addEventListener('scroll', function() {
     if (currentScroll > lastScrollTop) {
         // Scrolling down
         navbar.classList.add('slide-up');
+        donateBtn.classList.add('hide');
     } else {
         // Scrolling up
         navbar.classList.remove('slide-up');
+        donateBtn.classList.remove('hide');
     }
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
