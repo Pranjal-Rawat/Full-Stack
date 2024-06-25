@@ -67,7 +67,7 @@ h2 {
 
 p {
     text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Cardo';
     font-size: 16px;
     color: rgb(0, 0, 0);
 }
@@ -103,6 +103,7 @@ p {
 }
 
 .navlist li a {
+    font-family: 'Cardo';
     text-decoration: none;
     transition: all 0.3s;
     color: rgba(255, 255, 255);
@@ -155,8 +156,8 @@ p {
     justify-content: center;
     align-items: center;
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     max-width: 80%;
+    font-family: 'Cardo';
     flex-wrap: wrap;
 }
 
@@ -219,18 +220,19 @@ p {
     font-size: 40px;
     margin-bottom: 20px;
     animation: fadeIn 1s ease-in-out;
+    font-family: 'Cardo';
     color: white;
 }
 
 
 .textsmallmain{
-    text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;font-family: 'Cardo';
     font-size: 16px;
     color: rgb(0, 0, 0);
 }
 
 .textbig {
+    font-family: 'Cardo';
     font-size: 40px;
     margin-bottom: 20px;
     animation: fadeIn 1s ease-in-out;
@@ -238,6 +240,7 @@ p {
 }
 
 .textsmall {
+    font-family: 'Cardo';
     color: black;
     font-size: 20px;
     margin-bottom: 20px;
@@ -245,17 +248,20 @@ p {
 }
 
 .secTag {
+    font-family: 'Cardo';
     font-size: 30px;
     margin-bottom: 20px;
     animation: slideIn 1s ease-in-out;
 }
 
 .secsubTag {
+    font-family: 'Cardo';
     font-size: 16px;
     animation: slideIn 1.5s ease-in-out;
 }
 
 .btn {
+    font-family: 'Cardo';
     padding: 10px 20px;
     margin: 10px 5px;
     border: 2px solid white;
@@ -275,6 +281,7 @@ p {
 }
 
 .btn1 {
+    font-family: 'Cardo';
     padding: 10px 20px;
     margin: 10px 5px;
     border: 2px solid white;
@@ -294,6 +301,7 @@ p {
 
 
 .btn2 {
+    font-family: 'Cardo';
     padding: 10px 20px;
     margin: 10px 5px;
     border: 2px solid white;
@@ -359,6 +367,7 @@ p {
 }
 
 .contact {
+    font-family: 'Cardo';
     color: white;
     max-width: 600px;
     margin: 50px auto;
@@ -369,6 +378,7 @@ p {
 }
 
 .contact h2 {
+    font-family: 'Cardo';
     text-align: center;
     margin-bottom: 20px;
     color: #ffffff;
@@ -379,6 +389,7 @@ p {
 }
 
 .form-group label {
+    font-family: 'Cardo';
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
@@ -400,6 +411,7 @@ p {
 }
 
 button {
+    font-family: 'Cardo';
     display: block;
     width: 100%;
     padding: 10px;
@@ -418,6 +430,7 @@ button:hover {
 }
 
 .textfoot {
+    font-family: 'Cardo';
     color: #fff;
     text-shadow: 0 0 7px rgba(255, 255, 255, 0.6);
     text-align: center;
@@ -461,6 +474,7 @@ button:hover {
 
 .side-nav a,
 .side-nav .btn {
+    font-family: 'Cardo';
     padding: 10px 15px;
     text-decoration: none;
     font-size: 25px;
