@@ -1,4 +1,4 @@
-// JavaScript for smooth scrolling for anchor links
+//smooth scrolling anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -8,7 +8,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// JavaScript for burger menu functionality
+// burger menu
 const burger = document.getElementById('burger');
 const navlist = document.getElementById('navlist');
 const sideNav = document.getElementById('sideNav');
@@ -40,18 +40,16 @@ sideNavLinks.forEach(link => {
     });
 });
 
-// JavaScript for navbar and donate button hide/show on scroll
+//navbar and donate button hide/show on scroll
 const navbar = document.querySelector('.navbar');
 let lastScrollTop = 0;
 
 window.addEventListener('scroll', function() {
     const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
     if (currentScroll > lastScrollTop) {
-        // Scrolling down
         navbar.classList.add('slide-up');
         donateBtn.classList.add('hide');
     } else {
-        // Scrolling up
         navbar.classList.remove('slide-up');
         donateBtn.classList.remove('hide');
     }
