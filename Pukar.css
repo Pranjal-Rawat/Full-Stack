@@ -10,7 +10,7 @@ html {
 
 body {
     font-family: 'Arial', sans-serif;
-    background: url('Maroon1.jpeg') no-repeat center center fixed;
+    background: white;
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -71,7 +71,7 @@ p {
     position: sticky;
     top: 0;
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(241, 241, 241, 0.6);
     background-size: cover;
     background-blend-mode: darken;
     padding: 10px 20px;
@@ -95,7 +95,7 @@ p {
 .navlist li a {
     text-decoration: none;
     transition: all 0.3s;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255);
     letter-spacing: 1px;
     text-transform: uppercase;
     cursor: pointer;
@@ -112,7 +112,7 @@ p {
 
 
 .navlist li a:hover {
-    color: grey;
+    color: rgb(128, 128, 128);
 }
 
 .rightNav {
@@ -128,7 +128,7 @@ p {
 }
 
 .background {
-    background: rgba(0, 0, 0, 0.6);
+    background: maroon;
     background-size: cover;
     background-blend-mode: darken;
 }
@@ -238,6 +238,7 @@ p {
     cursor: pointer;
     font-size: 18px;
     transition: background 0.3s, transform 0.3s;
+    width: 190px;
 }
 
 .btn:hover {
@@ -263,6 +264,28 @@ p {
     background: rgba(255, 255, 255, 0.2);
     transform: translateY(-2px);
 }
+
+
+.btn2 {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn2:hover {
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+
+
 
 .secRight,
 .secLeft {
@@ -452,12 +475,13 @@ button:hover {
 @media only screen and (max-width: 991px) {
     .btn {
         position: fixed;
-        top: 16px;
-        right: 20px;
+        top: 13px;
+        right: 96px;
         z-index: 1000;
         padding: 8px 10px;
         font-size: 16px;
         transition: opacity 0.3s ease-out;
+        width: 207px;
     }
 
     .side-nav.open .btn {
