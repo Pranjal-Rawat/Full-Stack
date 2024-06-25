@@ -114,7 +114,6 @@ p {
     display: flex;
 }
 
-
 .navbar.slide-up {
     transform: translateY(-100%);
     transition: transform 1.5s ease-out;
@@ -190,6 +189,7 @@ p {
     padding: 10px;
 }
 
+/* Added Animations */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -285,6 +285,7 @@ p {
     cursor: pointer;
     font-size: 18px;
     transition: background 0.3s, transform 0.3s;
+    text-decoration: none;
 }
 
 .btn2:hover {
@@ -420,6 +421,12 @@ button:hover {
 
 
 
+
+
+
+/* Add this to your existing CSS */
+
+/* Side Navigation */
 .side-nav {
     height: 100%;
     width: 0;
@@ -427,7 +434,8 @@ button:hover {
     z-index: 1000;
     top: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* Changed from left to right */
+    background-color: rgba(0, 0, 0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -459,10 +467,12 @@ button:hover {
     width: 250px;
 }
 
+/* Hide the donate button inside side-nav by default */
 .side-nav .btn {
     display: none;
 }
 
+/*sliding navbar and donate button */
 .navbar.slide-up {
     transform: translateY(-100%);
     transition: transform 0.3s ease-out;
@@ -489,6 +499,9 @@ button:hover {
         display: block;
     }
 }
+
+
+
 
 
 
@@ -527,9 +540,9 @@ button:hover {
         text-align: center;
         color: maroon;
         font-family: 'Cardo';
-        font-size: 43px;
+        font-size: 29px;
         position: relative;
-        top: 89px;
+        top: 81px;
         margin-top: -70px;
     }
 
@@ -545,7 +558,7 @@ button:hover {
         top: 60px;
         left: 0;
         width: 100%;
-        background: url('MaroonGradient.jpeg');
+        background: maroon;
         background-size: cover;
         max-height: 0;
         overflow: hidden;
