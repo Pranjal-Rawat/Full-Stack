@@ -114,7 +114,7 @@ p {
     display: flex;
 }
 
-/* CSS */
+
 .navbar.slide-up {
     transform: translateY(-100%);
     transition: transform 1.5s ease-out;
@@ -190,7 +190,6 @@ p {
     padding: 10px;
 }
 
-/* Added Animations */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -421,12 +420,6 @@ button:hover {
 
 
 
-
-
-
-/* Add this to your existing CSS */
-
-/* Side Navigation */
 .side-nav {
     height: 100%;
     width: 0;
@@ -434,8 +427,7 @@ button:hover {
     z-index: 1000;
     top: 0;
     right: 0;
-    /* Changed from left to right */
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.5);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -467,12 +459,10 @@ button:hover {
     width: 250px;
 }
 
-/* Hide the donate button inside side-nav by default */
 .side-nav .btn {
     display: none;
 }
 
-/* CSS for the sliding navbar and donate button */
 .navbar.slide-up {
     transform: translateY(-100%);
     transition: transform 0.3s ease-out;
@@ -499,9 +489,6 @@ button:hover {
         display: block;
     }
 }
-
-
-
 
 
 
