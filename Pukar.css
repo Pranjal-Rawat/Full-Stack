@@ -618,6 +618,10 @@ button:hover {
 }
 
 @media only screen and (max-width: 768px) {
+    .logo img {
+        width: 75%;
+        border-radius: 80px;
+    }
     .contact {
         margin: 40px;
     }
