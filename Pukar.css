@@ -504,7 +504,7 @@ button:hover {
     width: 250px;
 }
 
-/* Hide the donate button inside side-nav by default */
+/* Hide donate button inside side-nav*/
 .side-nav .btn {
     display: none;
 }
