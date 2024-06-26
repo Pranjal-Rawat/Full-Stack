@@ -16,18 +16,6 @@ body {
     padding: 0;
 }
 
-
-.Top {
-    text-align: center;
-    color: maroon;
-    font-family: 'Cardo';
-    font-size: 66px;
-    position: relative;
-    top: 93px;
-    margin-top: -90px;
-}
-
-
 .circular-icon {
     width: 50px;
     height: 50px;
@@ -215,7 +203,6 @@ p {
     padding: 10px;
 }
 
-/* Added Animations */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -476,14 +463,6 @@ button:hover {
 }
 
 
-
-
-
-
-
-
-/* Add this to your existing CSS */
-
 /* Side Navigation */
 .side-nav {
     height: 100%;
@@ -492,7 +471,6 @@ button:hover {
     z-index: 1000;
     top: 0;
     right: 0;
-    /* Changed from left to right */
     background-color: rgba(0, 0, 0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
@@ -659,7 +637,6 @@ button:hover {
     padding: 20px 0;
 }
 
-/* Burger menu lines */
 .line {
     width: 25px;
     height: 3px;
