@@ -1,4 +1,4 @@
-//smooth scrolling anchor links
+// Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -8,7 +8,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// burger menu
+// JavaScript for burger menu functionality
 const burger = document.getElementById('burger');
 const navlist = document.getElementById('navlist');
 const sideNav = document.getElementById('sideNav');
@@ -17,8 +17,8 @@ const sideNavLinks = document.querySelectorAll('.sideNavLink');
 const donateBtn = document.getElementById('donateBtn');
 
 burger.addEventListener('click', () => {
-    burger.classList.toggle('active');
     sideNav.classList.toggle('open');
+    burger.classList.toggle('active');
     if (sideNav.classList.contains('open')) {
         donateBtn.style.display = 'none';
     } else {
@@ -26,11 +26,13 @@ burger.addEventListener('click', () => {
     }
 });
 
-closeBtn.addEventListener('click', () => {
-    sideNav.classList.remove('open');
-    burger.classList.remove('active');
-    donateBtn.style.display = 'block';
-});
+if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+        sideNav.classList.remove('open');
+        burger.classList.remove('active');
+        donateBtn.style.display = 'block';
+    });
+}
 
 sideNavLinks.forEach(link => {
     link.addEventListener('click', () => {
@@ -40,16 +42,18 @@ sideNavLinks.forEach(link => {
     });
 });
 
-//navbar and donate button hide/show on scroll
+// JavaScript for navbar and donate button hide/show on scroll
 const navbar = document.querySelector('.navbar');
 let lastScrollTop = 0;
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
     if (currentScroll > lastScrollTop) {
+        // Scrolling down
         navbar.classList.add('slide-up');
         donateBtn.classList.add('hide');
     } else {
+        // Scrolling up
         navbar.classList.remove('slide-up');
         donateBtn.classList.remove('hide');
     }
