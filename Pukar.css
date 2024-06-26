@@ -8,9 +8,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background: url('image.png');
+.bodyimg{
     background-size: cover;
     margin: 0;
     padding: 0;
