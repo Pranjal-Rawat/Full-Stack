@@ -491,7 +491,6 @@ button:hover {
     z-index: 1000;
     top: 0;
     right: 0;
-    border-bottom:  solid rgb(110 27 42);
     background-color: rgba(255, 255, 255, 1);
     overflow-x: hidden;
     transition: 0.5s;
