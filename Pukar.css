@@ -87,7 +87,7 @@ p {
     text-align: center;
     font-family: 'Cardo';
     font-size: 16px;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -247,7 +247,7 @@ p {
     text-align: center;
     font-family: 'Cardo';
     font-size: 20px;
-    color: white;
+    color: black;
 
 }
 
