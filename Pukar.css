@@ -483,12 +483,6 @@ button:hover {
 
 
 
-
-
-
-
-/* Add this to your existing CSS */
-
 /* Side Navigation */
 .side-nav {
     height: 100%;
@@ -497,23 +491,53 @@ button:hover {
     z-index: 1000;
     top: 0;
     right: 0;
-    /* Changed from left to right */
-    background-color: rgba(0, 0, 0, 0.9);
+    border-bottom:  solid rgb(110 27 42);
+    background-color: rgba(255, 255, 255, 1);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
 }
 
+
 .side-nav a,
 .side-nav .btn {
     font-family: 'Cardo';
-    padding: 10px 15px;
+    padding: 15px 15px;
     text-decoration: none;
     font-size: 25px;
-    color: white;
+    color: rgb(0, 0, 0);
     display: block;
     transition: 0.3s;
 }
+
+
+a {
+    position: relative;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; 
+    background-color: rgb(110 27 42);
+    left: 0;
+    bottom: -2px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+}
+
+
+
+li{
+    list-style: none;
+}
+
+
 
 .side-nav a:hover,
 .side-nav .btn:hover {
