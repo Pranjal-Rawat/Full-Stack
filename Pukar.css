@@ -18,7 +18,8 @@ html {
 
 .Top {
     text-align: center;
-    color: maroon;
+    color: rgb(110 27 42);
+    ;
     font-family: 'Cardo';
     font-size: 66px;
     position: relative;
@@ -155,7 +156,7 @@ p {
 }
 
 .background {
-    background: maroon;
+    background: rgb(110 27 42);
     background-size: cover;
     background-blend-mode: darken;
 }
@@ -391,7 +392,7 @@ p {
     color: white;
     width: 40%;
     margin: 50px auto;
-    background: rgb(128 0 0 / 85%);
+    background: rgb(110 27 42 / 85%);
     padding: 20px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 1.5);
     border-radius: 30px;
@@ -402,7 +403,7 @@ p {
     color: white;
     max-width: 600px;
     margin: 50px auto;
-    background: rgb(128 0 0 / 85%);
+    background: rgb(110 27 42/ 85%);
     padding: 20px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 1.5);
     border-radius: 30px;
@@ -579,7 +580,7 @@ button:hover {
         top: 60px;
         left: 0;
         width: 100%;
-        background: maroon;
+        background: rgb(76 19 20);
         background-size: cover;
         max-height: 0;
         overflow: hidden;
@@ -647,9 +648,9 @@ button:hover {
     #Contact{
         font-family: 'Cardo';
         color: white;
-        width: 80%;
+        width: 90%;
         margin: 50px auto;
-        background: rgb(128 0 0 / 85%);
+        background: rgb(110 27 42 / 85%);
         padding: 20px;
         box-shadow: 0 0 10px rgba(255, 255, 255, 1.5);
         border-radius: 30px;
@@ -659,7 +660,7 @@ button:hover {
         color: white;
         max-width: 600px;
         width: 80%;
-        background: rgba(130, 0, 0, 0.7);
+        background: rgb(110 27 42, 0.7);
         padding: 20px;
         box-shadow: 0 0 10px rgba(255, 255, 255, 1.5);
         border-radius: 30px;
