@@ -574,13 +574,10 @@ li {
 
     .btn {
         position: fixed;
-        top: 12px;
         right: 96px;
         z-index: 1000;
-        padding: 8px 10px;
         font-size: 16px;
         transition: opacity 0.3s ease-out;
-        width: 207px;
     }
 
     .side-nav.open .btn {
