@@ -239,7 +239,6 @@ p {
 }
 
 .textsmallmain {
-    text-align: center;
     font-family: 'Cardo';
     font-size: 20px;
     color: white;
@@ -272,7 +271,7 @@ p {
 
 .secsubTag {
     font-family: 'Cardo';
-    font-size: 16px;
+    font-size: 18px;
     animation: slideIn 1.5s ease-in-out;
 }
 
@@ -624,7 +623,7 @@ li {
     .secLeft {
         flex-direction: column;
         text-align: center;
-        height: 105vh;
+        height: 126vh;
     }
 
     .para {
@@ -652,16 +651,26 @@ li {
         margin-bottom: 20px;
     }
 
+    .textsmallmain {
+        text-align: center;
+    }
+
+    .textbigmain {
+        text-align: center;
+    }
+
     .textsmall {
-        font-size: 16px;
+        font-size: 18px;
         margin-bottom: 45px;
         animation: fadeIn 1.5s ease-in-out;
+        text-align: center;
     }
 
     .textbig {
         font-size: 28px;
         margin-bottom: 17px;
         animation: fadeIn 1s ease-in-out;
+        text-align: center;
     }
 
     .boxmain {
