@@ -46,11 +46,18 @@ html {
     display: flex;
 }
 
+h1{
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    text-shadow: 0 0 7px rgba(140, 5, 5, 0.7);
+}
+
 h2 {
     font-size: 30px;
     text-align: center;
     color: white;
-    text-shadow: 0 0 7px rgba(255, 255, 255, 0.7);
+    text-shadow: 0 0 7px rgba(129, 2, 2, 0.7);
 }
 
 .loc {
@@ -69,7 +76,7 @@ h2 {
 .p.loctext {
     text-align: center;
     font-family: 'Cardo';
-    font-size: 16px;
+    font-size: 20px;
     color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
@@ -79,7 +86,7 @@ h2 {
 p {
     text-align: center;
     font-family: 'Cardo';
-    font-size: 16px;
+    font-size: 18px;
     color: rgb(0, 0, 0);
 }
 
@@ -228,6 +235,7 @@ p {
     animation: fadeIn 1s ease-in-out;
     font-family: 'Cardo';
     color: white;
+    text-align: left;
 }
 
 .textsmallmain {
@@ -235,6 +243,7 @@ p {
     font-family: 'Cardo';
     font-size: 20px;
     color: white;
+    text-align: left;
 }
 
 .textbig {
@@ -251,6 +260,7 @@ p {
     font-size: 20px;
     margin-bottom: 20px;
     animation: fadeIn 1.5s ease-in-out;
+    text-align: left;
 }
 
 .secTag {
@@ -289,7 +299,6 @@ p {
 .btn1 {
     font-family: 'Cardo';
     padding: 10px 20px;
-    margin: 10px 5px;
     border: 2px solid white;
     border-radius: 10px;
     background: none;
@@ -297,7 +306,7 @@ p {
     cursor: pointer;
     font-size: 20px;
     transition: background 0.3s, transform 0.3s;
-    width: 97%;
+    width: 96%;
 }
 
 .btn1:hover {
@@ -369,10 +378,15 @@ p {
     opacity: 0.8;
 }
 
+.dis{
+    margin: 170px;
+}
+
+
 #Contact {
     font-family: 'Cardo';
     color: white;
-    width: 40%;
+    width: 40%; 
     margin: 50px auto;
     background: rgb(110 27 42 / 85%);
     padding: 20px;
@@ -462,7 +476,6 @@ button:hover {
     align-items: center;
 }
 
-/* Side Navigation */
 .side-nav {
     height: 100%;
     width: 0;
@@ -577,7 +590,7 @@ li {
         right: 96px;
         z-index: 1000;
         font-size: 16px;
-        transition: opacity 0.3s ease-out;
+        transition: background 0.3s, transform 0.3s;
     }
 
     .side-nav.open .btn {
@@ -611,7 +624,7 @@ li {
     .secLeft {
         flex-direction: column;
         text-align: center;
-        height: 83vh;
+        height: 105vh;
     }
 
     .para {
@@ -655,12 +668,17 @@ li {
         margin-bottom: -53px;
     }
 
+    .dis{
+        margin: 50px;
+    }
+
+
     #Contact {
         font-family: 'Cardo';
         color: white;
         width: 90%;
         margin: 50px auto;
-        background: rgb(110 27 42 / 85%);
+        background: rgb(110 27 42);
         padding: 20px;
         box-shadow: 0 0 10px rgba(255, 255, 255, 1.5);
         border-radius: 30px;
@@ -697,7 +715,6 @@ li {
     padding: 20px 0;
 }
 
-/* Burger menu lines */
 .line {
     width: 25px;
     height: 3px;
@@ -706,14 +723,13 @@ li {
     transition: all 0.3s ease;
 }
 
-/* Footer styles */
+
 footer.background {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px 0;
-    background: rgba(0, 0, 0, 0.8);
     color: #fff;
     text-align: center;
 }
@@ -730,7 +746,7 @@ footer .links a {
     color: #fff;
     margin: 0 10px;
     font-size: 24px;
-    transition: color 0.3s ease;
+    transition: #ff5722 color 0.3s ease;
 }
 
 footer .links a:hover {
