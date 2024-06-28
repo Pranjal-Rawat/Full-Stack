@@ -629,16 +629,11 @@ li {
         display: flex;
     }
 
-    .secRight{
-        flex-direction: column;
-        text-align: center;
-        height: 86vh;
-    }
-
+    .secRight,
     .secLeft{
         flex-direction: column;
         text-align: center;
-        height: 126vh;
+        height: 160vh;
     }
 
     .para {
