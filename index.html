@@ -9,19 +9,18 @@
           integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link href='https://fonts.googleapis.com/css?family=Cardo' rel='stylesheet'>
-    <title>Pukar</title>
+    <title>Join Us - Pukar</title>
 </head>
 <body>
-<section class="bodyimg">
     <nav class="navbar background">
         <div class="logo">
             <img src="pukaarsans.jpg" alt="logo">
         </div>
         <ul class="navlist" id="navlist">
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#Blog">Blog</a></li>
-            <li><a href="#Aboutus">About us</a></li>
-            <li><a href="#Contact">Contact us</a></li>
+            <li><a href="index.html#Home">Home</a></li>
+            <li><a href="index.html#Blog">Blog</a></li>
+            <li><a href="index.html#Aboutus">About us</a></li>
+            <li><a href="index.html#Contact">Contact us</a></li>
             <li><a href="newsletter.html">Newsletter</a></li>
             <li><a href="partners.html">Our Partners</a></li>
             <li><a href="joinus.html">Join Us</a></li>
@@ -36,10 +35,10 @@
 
     <div id="sideNav" class="side-nav">
         <a href="javascript:void(0)" class="closebtn" id="closeBtn">&times;</a>
-        <a href="#Home" class="sideNavLink">Home</a>
-        <a href="#Blog" class="sideNavLink">Blog</a>
-        <a href="#Aboutus" class="sideNavLink">About us</a>
-        <a href="#Contact" class="sideNavLink">Contact us</a>
+        <a href="index.html#Home" class="sideNavLink">Home</a>
+        <a href="index.html#Blog" class="sideNavLink">Blog</a>
+        <a href="index.html#Aboutus" class="sideNavLink">About us</a>
+        <a href="index.html#Contact" class="sideNavLink">Contact us</a>
         <a href="newsletter.html" class="sideNavLink">Newsletter</a>
         <a href="partners.html" class="sideNavLink">Our Partners</a>
         <a href="joinus.html" class="sideNavLink">Join Us</a>
@@ -52,101 +51,65 @@
         </div>
     </div>
 
-    <section class="background firstSection" id="Home">
-        <div class="boxmain">
-            <div class="firsthalf">
-                <p class="textbigmain">Education is the only thing which no one can take away from you</p>
-                <p class="textsmallmain">
-                    <!-- Content -->
-                </p>
-                <div class="buttons">
-                    <a href="joinus.html" class="btn2">Join Us</a>
+    <section class="secRight" id="JoinUs">
+        <div class="para">
+            <h2 class="secTag textbig">Join Us</h2>
+            <p class="secsubTag textsmall">
+                <!-- Add content about joining here -->
+            </p>
+        </div>
+        <section class="contact" id="Contact">
+            <h2>JOIN US</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
-            </div>
-            <div class="second">
-                <img class="imagee animated" src="Pukarbackground.jpg" alt="LogoImage">
-            </div>
-        </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="role">Role</label>
+                    <select id="role" name="role" required>
+                        <option value="">Select a role</option>
+                        <option value="volunteer">Volunteer</option>
+                        <option value="member">Member</option>
+                        <option value="partner">Partner</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button class="btn1" type="submit">Send Message</button>
+            </form>
+        </section>
     </section>
 
-    <section class="secRight" id="Blog">
-        <div class="para">
-            <h2 class="secTag textbig">Blog</h2>
-            <p class="secsubTag textsmall">
-                <!-- Content -->
-            </p>
+    <footer class="background">
+        <div class="links">
+            <a href="https://www.instagram.com/projectpurkul?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+            <a href="https://www.instagram.com/projectpurkul?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.instagram.com/projectpurkul?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/projectpurkul?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links">
+                <i class="fa-regular fa-envelope"></i>
+            </a>
+            <a href="https://www.instagram.com/projectpurkul?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
         </div>
-        <div class="thumbnail">
-            <img src="Pukarbackground.jpg" alt="pukarlogo" class="imgFluid animated">
-        </div>
-    </section>
-
-    <section class="secLeft" id="Aboutus">
-        <div class="para">
-            <h2 class="secTag textbig">About Us</h2>
-            <p class="secsubTag textsmall">
-                <!-- Content -->
-            </p>
-        </div>
-        <div class="thumbnail">
-            <img src="Pukarbackground.jpg" alt="pukarlogo" class="imgFluid animated">
-        </div>
-    </section>
-
-    <div class="dis">
-        <h2>Disclaimer</h2>
-        <p>No third party agency is working on behalf of Goonj<br>
-            <!-- Content -->
+        <p class="textfoot">
+            Copyright &copy; 2024 www.purkul.com All Rights Reserved
         </p>
-    </div>
+    </footer>
 
-    <div class="loc">
-        <img class="locimg" src="location_icon.png" alt="locationImg">
-        <p class="loctext">Purkul Village Uttarii Gaon, road, near Bhagwantpur, Dehradun, Uttarakhand 248009</p>
-    </div>
-
-    <section class="contact" id="Contact">
-        <h2>Contact Us</h2>
-        <form id="contactForm">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button class="btn1" type="submit">Send Message</button>
-        </form>
-    </section>
-</section>
-<footer class="background">
-    <div class="links">
-        <a href="https://www.instagram.com/projectpurkul?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links">
-            <i class="fa-solid fa-phone"></i>
-        </a>
-        <a href="https://www.instagram.com/projectpurkul?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links">
-            <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://www.instagram.com/projectpurkul?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links">
-            <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a href="https://www.instagram.com/projectpurkul?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links">
-            <i class="fa-regular fa-envelope"></i>
-        </a>
-        <a href="https://www.instagram.com/projectpurkul?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links">
-            <i class="fa-brands fa-youtube"></i>
-        </a>
-    </div>
-    <p class="textfoot">
-        Copyright &copy; 2024 www.purkul.com All Rights Reserved
-    </p>
-</footer>
-
-<script src="Pukar.js"></script>
+    <script src="Pukar.js"></script>
 </body>
 </html>
