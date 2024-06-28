@@ -307,7 +307,7 @@ p {
     cursor: pointer;
     font-size: 20px;
     transition: background 0.3s, transform 0.3s;
-    width: 96%;
+    width: 96.5%;
 }
 
 .btn1:hover {
@@ -567,12 +567,10 @@ li {
     color: #ff5722;
 }
 
-/* Hide the donate button inside side-nav by default */
 .side-nav .btn {
     display: none;
 }
 
-/* Sliding navbar and donate button */
 .navbar.slide-up {
     transform: translateY(-100%);
     transition: transform 0.3s ease-out;
@@ -633,7 +631,14 @@ li {
     .secLeft{
         flex-direction: column;
         text-align: center;
-        height: 160vh;
+    }
+
+    #Blog{
+        height: 86vh;
+    }
+
+    #Aboutus{
+        height: 126vh;
     }
 
     .para {
@@ -692,7 +697,7 @@ li {
 
     .dis{
         margin: 50px;
-        hieght: 54vh;
+        height: 54vh;
     }
 
 
@@ -718,11 +723,6 @@ li {
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .contact {
-        margin: 40px;
-    }
-}
 
 .buttons {
     display: flex;
@@ -791,9 +791,9 @@ footer .links i {
 
 
 #Newsletter{
-    hieght:260vh;
+    height:120vh;
 }
 
 #JoinUs{
-    hieght:280vh;
+    height:155vh;
 }
