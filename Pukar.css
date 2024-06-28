@@ -581,7 +581,7 @@ li {
     transition: opacity 0.3s ease-out;
 }
 
-@media only screen and (max-width: 448px) {
+@media only screen and (max-width: 998px) {
     .locimg {
         width: 8%;
     }
@@ -638,7 +638,7 @@ li {
     }
 
     #Aboutus{
-        height: 140vh;
+        height: 148vh;
     }
 
     .para {
@@ -658,6 +658,7 @@ li {
 
     .firstSection {
         padding-bottom: 50px;
+        height: 114vh
     }
 
     .buttons {
