@@ -581,7 +581,7 @@ li {
     transition: opacity 0.3s ease-out;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 768px) {
     .locimg {
         width: 8%;
     }
