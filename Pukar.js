@@ -49,13 +49,27 @@ let lastScrollTop = 0;
 window.addEventListener('scroll', function () {
     const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
     if (currentScroll > lastScrollTop) {
-        // Scrolling down
         navbar.classList.add('slide-up');
         donateBtn.classList.add('hide');
     } else {
-        // Scrolling up
         navbar.classList.remove('slide-up');
         donateBtn.classList.remove('hide');
     }
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
+
+var images = ['IMAGE_1725.JPG', 'IMAGE_1726.JPG', 'IMAGE_1727.JPG'];
+        var currentImageIndex = 0;
+        var imageElement = document.getElementById('imagee animated');
+
+        function changeImage() {
+            imageElement.style.transform = 'translateX(-100%)';
+
+            setTimeout(function() {
+                imageElement.src = images[currentImageIndex];
+                imageElement.style.transform = 'translateX(0)';
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+            }, 500);
+        }
+
+        setInterval(changeImage, 2000);
