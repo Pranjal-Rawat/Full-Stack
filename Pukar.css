@@ -623,7 +623,7 @@ li {
     .secLeft {
         flex-direction: column;
         text-align: center;
-        height: 126vh;
+        height: 160vh;
     }
 
     .para {
