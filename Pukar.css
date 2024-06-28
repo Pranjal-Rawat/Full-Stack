@@ -336,8 +336,7 @@ p {
     transform: translateY(-2px);
 }
 
-.secRight,
-.secLeft {
+.secRight{
     color: white;
     display: flex;
     align-items: center;
@@ -351,6 +350,15 @@ p {
 
 .secLeft {
     flex-direction: row-reverse;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    height: 100vh;
 }
 
 .para {
