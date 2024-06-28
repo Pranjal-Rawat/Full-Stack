@@ -653,10 +653,12 @@ li {
 
     .textsmallmain {
         text-align: center;
+        font-size: 18px;
     }
 
     .textbigmain {
         text-align: center;
+        font-size: 35px;
     }
 
     .textsmall {
