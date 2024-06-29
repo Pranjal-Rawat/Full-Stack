@@ -797,4 +797,5 @@ footer .links i {
 
 #JoinUs{
     height: 150vh;
+    flex-direction: row;
 }
