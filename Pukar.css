@@ -447,6 +447,14 @@ p {
     outline: none;
 }
 
+#role{
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
 button {
     font-family: 'Cardo';
     display: block;
