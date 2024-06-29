@@ -798,4 +798,5 @@ footer .links i {
 #JoinUs{
     height: 170vh;
     flex-direction: row;
+    max-width: fit-content;
 }
