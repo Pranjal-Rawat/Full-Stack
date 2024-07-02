@@ -378,7 +378,7 @@ p {
 }
 
 .thumbnail img {
-    max-width: 250px;
+    width: 100%;
     border-radius: 26px;
     margin-top: 18px;
     transition: transform 0.3s ease, opacity 0.3s ease;
@@ -747,9 +747,6 @@ li {
 @media only screen and (max-width: 450px) {
     .imagee{
         max-width: 150%;
-    }
-    .thumbail img{
-        max-width:105%;
     }
 }
 
