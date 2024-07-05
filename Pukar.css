@@ -193,6 +193,7 @@ p {
 }
 
 .imagee {
+    border: rgb(110 27 42) solid 4px;
     border-radius: 50px;
     padding: 20px;
     transition: transform 0.3s ease, opacity 0.3s ease;
@@ -786,6 +787,7 @@ footer.background {
 
 footer .links {
     display: flex;
+    width: 38px;
     justify-content: center;
     align-items: center;
     margin: 10px 0;
