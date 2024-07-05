@@ -594,6 +594,11 @@ li {
 }
 
 @media only screen and (max-width: 998px) {
+
+    footer .links {
+        width: 38px;
+    }
+    
     .locimg {
         width: 8%;
     }
@@ -750,6 +755,10 @@ li {
     .imagee{
         max-width: 100%;
     }
+    
+    footer .links {
+        width: 38px;
+    }
 }
 
 .buttons {
@@ -787,7 +796,6 @@ footer.background {
 
 footer .links {
     display: flex;
-    width: 38px;
     justify-content: center;
     align-items: center;
     margin: 10px 0;
