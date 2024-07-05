@@ -748,7 +748,7 @@ li {
 
 @media only screen and (max-width: 450px) {
     .imagee{
-        max-width: 150%;
+        max-width: 100%;
     }
 }
 
