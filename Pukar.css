@@ -86,6 +86,7 @@ p {
     font-family: 'Cardo';
     font-size: 18px;
     color: rgb(0, 0, 0);
+    padding: 0 15px;
 }
 
 .navbar {
@@ -644,11 +645,11 @@ li {
     }
 
     #Blog{
-        height: 100vh;
+        height: 108vh;
     }
 
     #Aboutus{
-        height: 148vh;
+        height: 156vh;
     }
 
     .para {
