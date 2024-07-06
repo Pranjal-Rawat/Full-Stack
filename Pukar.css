@@ -351,7 +351,7 @@ p {
     margin: auto;
     padding: 20px 0;
     flex-wrap: wrap;
-    height: 100vh;
+    height: auto;
 }
 
 .secLeft {
@@ -364,7 +364,7 @@ p {
     margin: auto;
     padding: 20px 0;
     flex-wrap: wrap;
-    height: 100vh;
+    height: auto;
 }
 
 .para {
@@ -755,6 +755,11 @@ li {
     
     footer .links {
         width: 38px;
+    }
+
+    .firstSection {
+        padding-bottom: 50px;
+        height: 124vh
     }
 }
 
