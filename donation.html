@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link data-default-icon="pukaarLOGOFINAL.jpg" rel="icon" sizes="192x192" href="pukaarLOGOFINAL.jpg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Pukar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href='https://fonts.googleapis.com/css?family=Cardo' rel='stylesheet'>
+    <title>Pukaar - Donate</title>
+</head>
+<body>
+    <nav class="navbar background">
+        <div class="logo">
+            <img src="pukaarsans.jpg" alt="logo">
+        </div>
+        <ul class="navlist" id="navlist">
+            <li><a href="index.html#Home">Home</a></li>
+            <li><a href="index.html#Blog">Blog</a></li>
+            <li><a href="index.html#Aboutus">About us</a></li>
+            <li><a href="index.html#Contact">Contact us</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="partners.html">Our Partners</a></li>
+            <li><a href="joinus.html">Join Us</a></li>
+        </ul>
+        <div class="burger" id="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section id="donation" class="donation">
+        <h2>Donate to Pukaar</h2>
+        <form id="donationForm">
+            <div class="form-group">
+                <label for="amount">Select Amount</label>
+                <div class="amount-options">
+                    <input type="radio" id="amount500" name="amount" value="500">
+                    <label for="amount500">₹500</label>
+                    <input type="radio" id="amount1000" name="amount" value="1000">
+                    <label for="amount1000">₹1000</label>
+                    <input type="radio" id="amount2000" name="amount" value="2000">
+                    <label for="amount2000">₹2000</label>
+                    <input type="radio" id="amountAny" name="amount" value="any">
+                    <label for="amountAny">Any Amount</label>
+                </div>
+                <input type="number" id="customAmount" name="customAmount" placeholder="Enter Amount" style="display:none;">
+            </div>
+            <button class="btn1" type="submit">Donate</button>
+        </form>
+    </section>
+
+    <script src="Pukar.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const amountAny = document.getElementById('amountAny');
+            const customAmount = document.getElementById('customAmount');
+            
+            amountAny.addEventListener('change', function() {
+                if (amountAny.checked) {
+                    customAmount.style.display = 'block';
+                }
+            });
+            
+            document.querySelectorAll('input[name="amount"]').forEach((radio) => {
+                radio.addEventListener('change', function() {
+                    if (!amountAny.checked) {
+                        customAmount.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
